@@ -1,104 +1,221 @@
-html, body {
-    height: 100% !important;
-    min-height: 100% !important;
+/**********************************************************************************************************
+    Body Styles 
+**********************************************************************************************************/
+body {
+    color: #000000;
+    font-family: 'Karla', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;*/
 }
 
-
-.top-sticky {
-    top: 0;
-    position: fixed;
-    min-width: 100%;
-    z-index: 99999;
+/**********************************************************************************************************
+    Nav Bar styles
+**********************************************************************************************************/    
+.nav-styles {
+    background-color: white !important;
 }
 
-.header {
-    background-color: #F5F5F5;
+/**********************************************************************************************************
+    Logo Image styles
+**********************************************************************************************************/    
+.logo-image {
+    width: 147px;
+    height: 48px;
 }
 
-.navi {
-    background-color: white;
-}
-
-section {
-    height: 100%;
-}
-
-a.nav-link {
-    color: black;
-}
-
-a.nav-link:hover {
-    color: #E37A36;
-}
-
-
-.logo {
-    width: 20%;
-}
-
-.main-hero-image {
-    background: url(./images/solar-872804_1920.jpg)  no-repeat center; 
+/**********************************************************************************************************
+    Home section styles
+**********************************************************************************************************/    
+#home-section {
+    background: url("./images/home-section.jpg") no-repeat;
+    min-height: 700px;
     background-size: cover;
-    height: 500px;
-    position: relative;
-    top: 15%;
 }
 
-.main-hero-text {
-    text-align: center;
+#home-section .home-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px; 
+}
+
+#home-section .home-inner {
+    padding-top: 150px; 
     color: white;
-    text-shadow: 2px 2px 5px black;
 }
 
-.main-hero-text h1 {
-    background-color: #E37A36;
-    margin-top: 30px;
-    font-size: 4vw;
+#home-section h4 {
+    text-transform: uppercase;
 }
 
-
-.welcome {
-    background-color: white;
-    height: 100%;
-    margin-top: 100px;
-    padding-top: 100px;
+#home-section h1 {
+    background-color: rgb(227, 122, 54);
+    width: 25%;
 }
 
-.welcome col-6 {
-    padding-top: 100px 100px 100px 100px;
-}
-
-.welcome-text {
-    padding-left: 200px;
-}
-
-.benefits {
-    background-color: #F5F5F5;
-    height: 100%;
-    margin-top: 100px;
-    padding-top: 100px;
-}
-
-.benefits-text {
-    padding-left: 200px;
-}
-
-.benefits-image {
-    padding-left: 0px;
-}
-
-.panels {
-    background-color: white;
-}
-
-.contact {
+/**********************************************************************************************************
+    Benefit Section Styles
+**********************************************************************************************************/    
+#benefits-section {
     background-color: #F5F5F5;
 }
-.footer {
-    background-color:rgb(37,37,37);
-    min-height: 50%;
+
+
+
+/**********************************************************************************************************
+    How solar works section styling
+**********************************************************************************************************/ 
+   
+#how-solar-works-section .how-panels-work {
+    background-color: #F5F5F5;
+    color: black;
+    z-index: 0;
+    min-width: 100%;
+    position: relative;
+    left: -10%;
+    padding-left: 250px !important;
+}
+
+#how-solar-works-section .what-made-of {
+    background-color:  rgb(37,37,37);
+    color: white;
+    z-index: 1;
+    position: relative;
+    left: 7%;
+    padding-top: 100px !important;
+    padding-right: 170px !important;
+}
+
+#how-solar-works-section .workman-image {
+    -moz-box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.2); 
+    z-index: 2;
+    width: auto;
+    position: relative;
+    top: 7%;
+    left:30%;
+}
+
+#how-solar-works-section .workshop-image {
+    -moz-box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.2); 
+    z-index: 3 !important;
+    width: auto;
+    position: relative;
+    left: -10%;
+    top: 15%;
+    height: auto;
+}
+
+/**********************************************************************************************************
+    Partners Section Styles
+**********************************************************************************************************/ 
+#partners-section .partners {
+    max-width: 100% !important;
+}
+
+/**********************************************************************************************************
+    Contact Us Section Styles
+**********************************************************************************************************/    
+#contact-us-section {
+    background-color: #F5F5F5;
+}
+
+#contact-us-section .form-control-design {
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    border-bottom: 1px solid rgb(68,68,68);
+    border-radius: 0%;
+}
+
+#contact-us-section .form-control-design:active :focus {
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    border-bottom: 1px solid rgb(223, 152, 28);
+    border-radius: 0%;
+    box-shadow: none !important;
+}
+
+#contact-us-section .form-control-design:focus {
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    border-bottom: 1px solid rgb(223, 152, 28);
+    border-radius: 0%;
+    box-shadow: none !important;
+}
+
+#contact-us-section textarea {
+    resize: none;
+    height: 175px;
+}
+
+#contact-us-section button {
+    background-color: rgb(223, 152, 28);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0%;
+}
+
+/**********************************************************************************************************
+    Footer Styles
+**********************************************************************************************************/    
+#footer-section {
+    background-color: rgb(37,37,37);
+    color: white;
+}
+
+#footer-section .copyright-section {
+    border-top: rgb(59,59,59) solid 1px;
+}
+
+/**********************************************************************************************************
+    Social Icons Styling
+**********************************************************************************************************/    
+#footer-section .social-link {
+    padding: 6px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(164, 174, 176);
+    text-align: center;
+    color: rgb(164, 174, 176) !important;
+    font-size: 0.70em;
+    text-align: center;
+} 
+
+#footer-section .social-link:hover {
+    color: rgb(223, 152, 28)  !important;
+    border: 1px solid rgb(223, 152, 28) ;
+}
+
+#footer-section .footer-col-1-text {
+    color: rgb(164, 174, 176) !important;
+    font-size: 0.7rem;
+}
+
+#footer-section .contact-us-orange {
+    font-family: 'Barlow Condensed', sans-serif;
+    color:rgb(223, 152, 28) !important;
+    font-weight: bold;
+}
+
+#footer-section .recent-work {
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
 }
