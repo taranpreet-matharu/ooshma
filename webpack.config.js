@@ -5,10 +5,10 @@ let path = require('path');
 module.exports = {
     entry: './src/components/presentationalComps/app.js',
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, ''),
         filename: 'output.js'
     },
-    mode: 'production',
+    mode: 'development',
     module: {
         rules: [
             {

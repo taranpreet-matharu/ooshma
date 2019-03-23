@@ -17,7 +17,6 @@ function App(props) {
             <AboutUs></AboutUs>
             <Benefits></Benefits>
             <HowSolarWorks></HowSolarWorks>
-            <Partners></Partners>
             <ContactUs></ContactUs>
             <Footer></Footer>
         </React.Fragment>

@@ -26,10 +26,7 @@ export function NavBar(props) {
                       <a href="#how-solar-works-section" class="nav-link nav-link-styles">How it Works</a>
                     </li>
                     <li class="nav-item px-md-2">
-                      <a href="#blog-section" class="nav-link nav-link-styles">Blog</a>
-                    </li>
-                    <li class="nav-item px-md-2">
-                        <a href="#contact-us-section" class="nav-link nav-link-styles">Contact</a>
+                        <a href="#contact-us-section" class="nav-link nav-link-styles">Contact Us</a>
                     </li>
                   </ul>
               </div>

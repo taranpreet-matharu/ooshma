@@ -18,6 +18,7 @@ body {
 .nav-styles {
     background-color: white !important;
     font-size: 0.8rem;
+    padding-left:5px !important;
 }
 
 .nav-styles li {
@@ -48,8 +49,25 @@ body {
 /**********************************************************************************************************
     Home section styles
 **********************************************************************************************************/    
+
+@media screen and (max-width: 900px) {
+    #home-section {
+        background: url("../images/home-section.jpg") no-repeat;
+        max-height: 500px;
+        background-size: contain ;
+    }
+
+    #home-section .home-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 500px;
+    }
+}
+
 #home-section {
-    background: url("./images/home-section.jpg") no-repeat;
+    background: url("../images/home-section.jpg") no-repeat;
     min-height: 700px;
     background-size: cover;
 }
@@ -80,18 +98,67 @@ body {
 }
 
 /**********************************************************************************************************
+    About Us Section Styles
+**********************************************************************************************************/    
+#about-us-section .about-h6{
+    font-size: 0.8rem !important;
+}
+
+#about-us-section .about-us-text{
+    font-size: 0.8rem !important;
+}
+
+@media screen and (max-width: 900px) {
+    #about-us-section .about-us-text{
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+}
+
+/**********************************************************************************************************
     Benefit Section Styles
 **********************************************************************************************************/    
 #benefits-section {
     background-color: #F5F5F5;
+    padding-top: 120px !important;
 }
 
+#benefits-section .benefits-h6{
+    font-size: 0.8rem !important;
+}
+
+#benefits-section .benefits-text{
+    font-size: 0.8rem !important;
+}
+
+#benefits-section i{
+    font-size: 2rem !important;
+    -webkit-text-stroke: 2px #F5F5F5;
+}
+
+#benefits-section a {
+    background-color: rgb(223, 152, 28);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0% !important;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#benefits-section a:visited {
+    background-color: rgb(223, 152, 28);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0% !important;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
 
 
 /**********************************************************************************************************
     How solar works section styling
 **********************************************************************************************************/ 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     #how-solar-works-section .how-panels-work {
         background-color: #F5F5F5;
         color: black;
